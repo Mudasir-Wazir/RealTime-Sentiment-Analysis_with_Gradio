@@ -2,6 +2,14 @@
 
 Simple Gradio app using Hugging Face Transformers to run a sentiment-analysis pipeline.
 
+## Features
+
+- Pinned model for reproducibility: `distilbert-base-uncased-finetuned-sst-2-english`
+- Confidence display with both POSITIVE and NEGATIVE scores
+- Input validation for empty submissions
+- Built-in examples for quick testing
+- Request queue enabled for smoother concurrency
+
 ## Requirements
 
 - Python 3.9+ (Windows recommended via PowerShell)
@@ -64,9 +72,16 @@ ML_app/
 └─ README.md
 ```
 
+## Usage
+
+- Enter a sentence and click Submit. The app returns a label-style view with both POSITIVE and NEGATIVE confidence scores.
+- Try the prefilled examples to verify the model is working.
+- If you submit an empty input, the app will prompt you to provide text.
+
 ## Notes
 
 - On first run, `transformers` downloads a small sentiment model; wait for it to complete.
+- The model is pinned for consistent results across machines.
 - If port 7860 is busy, Gradio will offer another port.
 - To deactivate the virtual environment: `deactivate`.
 
