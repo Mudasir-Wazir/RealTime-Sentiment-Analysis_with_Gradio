@@ -42,7 +42,8 @@ python .\app.py
 Gradio will print a local URL like `http://127.0.0.1:7860`. Open it in your browser.
 Running on public URL: https://a1b2c3d4.gradio.app
 
-![App preview]<img src="image-1.webp" alt="App preview
+![App preview](image-1.webp)
+
 
 ## Quickstart (Git Bash)
 
